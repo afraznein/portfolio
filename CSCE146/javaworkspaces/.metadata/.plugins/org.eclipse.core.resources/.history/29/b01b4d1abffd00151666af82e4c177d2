@@ -1,0 +1,31 @@
+import java.lang.*;
+public class Homework8_Driver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("We will determine the Konigsberg Bridge Puzzle");
+		System.out.println("Generating Graph based on image provided in lab.");
+		Homework08 adjMatGrap = new Homework08(5);
+		// addEdge(toVertex, fromVertex, weight
+		adjMatGrap.addEdge(2, 1, 5.0, "One");
+		adjMatGrap.addEdge(2, 1, 5.0, "Two");
+		adjMatGrap.addEdge(3, 1, 5.0, "Four");
+		
+		adjMatGrap.addEdge(3, 2, 5.0, "Three");
+		adjMatGrap.addEdge(4, 2, 5.0, "Five");
+		adjMatGrap.addEdge(4, 2, 5.0, "Six");
+		
+		adjMatGrap.addEdge(4, 3, 5.0, "Seven");		
+
+		System.out.println("Printing DFS for all");
+		for (int i = 1; i < 8; i++)
+		{
+			System.out.println("DFS: "+i);
+			adjMatGrap.printDFSForAll(i);
+			System.out.println();
+		}
+		
+		adjMatGrap.HamiltonianCycle();
+	}
+
+}

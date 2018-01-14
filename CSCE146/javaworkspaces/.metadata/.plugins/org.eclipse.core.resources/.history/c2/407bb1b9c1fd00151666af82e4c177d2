@@ -1,0 +1,139 @@
+import java.util.*;
+public class Homework08 {/*
+Name: Anthony Frazier
+Date: April 6, 2016
+Program Name: Lab11
+Description: Lab11
+Objective:	Objective:
+Create a class which constructs an adjacency matrix representation of a graph and performs a few graph operations.
+
+Write an Adjacency Matrix Graph class which has the following:
+
+Two constructors:
+	-Default which makes the matrix of a pre-defined size
+	-Parameterized which takes in a non-negative or 0 size and creates an empty matrix
+-addEdge: this method returns nothing and takes in two string parameters and a weight. 
+	The two integer parameters correspond to the names of vertices and the weight is the weight of the newly created edge.  
+-printDFS: This prints out the vertices name’s in depth first order.  You can find the algorithm the presentation provided.
+-printBFS: This prints out the vertices name’s in breadth first order.  Like above you can find the algorithm in the presentation.
+printDFSForAll: For every vertex in the graph it will print its DFS
+printBFSForAll: For every vertex in the graph it will print its BFS
+
+	 
+
+	Write another file that tests each of the methods for this graph.  
+
+
+	*/
+
+		private static final int DEFAULT_NODE_COUNT = 10;
+		private Bridge[][] BridgeGraph;
+		private ArrayList<Integer> markedVerts;
+		private ArrayList<Integer> visitedVerts;
+		
+		public Homework08()
+		{
+			BridgeGraph = new Bridge[DEFAULT_NODE_COUNT][DEFAULT_NODE_COUNT];
+			markedVerts = new ArrayList<Integer>();
+			visitedVerts = new ArrayList<Integer>();
+		}
+		
+		public Homework08(int size)
+		{
+			if (size <= 0)
+			{
+				System.out.println("Invalid size. Aborting.");
+				return;
+			}
+			else
+			{
+				BridgeGraph = new Bridge[size][size];
+				markedVerts = new ArrayList<Integer>();
+				visitedVerts = new ArrayList<Integer>();
+			}
+		}
+		
+		public void addEdge(int toVertex, int fromVertex, double weight, String name)
+		{
+			if (toVertex < 0 || fromVertex < 0)
+			{
+				System.out.println("Invalid values. Aborting.");
+				return;
+			}
+			else
+			{
+				Bridge aBridge = new Bridge();
+				aBridge.setName(name);
+				aBridge.setWeight(weight);
+				BridgeGraph[fromVertex][toVertex] = aBridge;
+			}
+		}
+		
+		public void printDFS()
+		{
+			markedVerts.clear();
+			printDFS(1);
+		}
+		
+		public void printDFSForAll(int startIndex)
+		{
+			markedVerts.clear();
+			printDFS(startIndex);
+		}
+		
+		private void printDFS(int index)
+		{
+			Bridge aBridge = new Bridge();
+			aBridge = BridgeGraph[0][0];
+			System.out.println(aBridge.getName());
+			markedVerts.add(index);
+			// Find a neighbor to traverse to
+			for (int i = 0; i < BridgeGraph[index].length; i++)
+			{
+				if (BridgeGraph[index][i] != null && markedVerts.contains(i) == false)
+				{
+					printDFS(i);
+				}
+			}
+			return;
+		}
+
+		public void printBFS()
+		{
+			markedVerts.clear();
+			visitedVerts.clear();
+			printBFS(1);
+		}
+		
+		public void printBFSForAll(int startIndex)
+		{
+			markedVerts.clear();
+			visitedVerts.clear();
+			printBFS(startIndex);
+		}
+		private void printBFS(int index)
+		{
+			if (visitedVerts.contains(index) == false)
+			{
+				System.out.println(index);
+				visitedVerts.add(index);
+			}
+			markedVerts.add(index);
+			for (int i = 0; i < BridgeGraph[index].length; i++)
+			{
+				if (BridgeGraph[index][i] != null && visitedVerts.contains(i) == false)
+				{
+					System.out.println(i);
+					visitedVerts.add(i);
+				}
+			}
+			// Move to next node that's not marked
+			for (int i = 0; i < BridgeGraph.length; i++)
+			{
+				if (BridgeGraph[index][i] != null && markedVerts.contains(i) == false)
+				{
+					printBFS(i);
+				}
+			}
+		}
+}

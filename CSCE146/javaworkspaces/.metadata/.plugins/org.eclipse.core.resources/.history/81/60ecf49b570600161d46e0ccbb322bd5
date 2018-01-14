@@ -1,0 +1,13 @@
+import java.util.*;
+public class CarHashTable {
+	private ArrayList<Car>[] table;
+	public CarHashTable()
+	{
+		table = new ArrayList[100];
+		for (int i = 0; i < table.length; i++)
+		{
+			table[i] = new ArrayList<Car>();
+		}
+	}
+
+}

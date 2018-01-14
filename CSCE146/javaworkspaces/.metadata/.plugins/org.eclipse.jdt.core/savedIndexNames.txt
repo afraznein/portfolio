@@ -1,0 +1,2 @@
+INDEX VERSION 1.127+N:\Nein_\School\USC\CSCS146\javaworkspaces\.metadata\.plugins\org.eclipse.jdt.core
+1337115442.index

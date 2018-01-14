@@ -1,0 +1,47 @@
+% Anthony Frazier
+% CSCE330
+% Homework 5
+%
+% October 10, 2017
+
+?- exactly_3([a,b]).
+false.
+
+?- exactly_3([a,b,c]).
+true.
+
+?- at_least_3([a,b,c]).
+true.
+
+?- at_least_3([a,b,c,d]).
+true.
+
+?- at_least_3([a,b]).
+false.
+
+?- at_most_3([a]).
+true .
+
+?- at_most_3([a,b]).
+true .
+
+?- at_most_3([a,b,c]).
+true.
+
+?- at_most_3([a,b,c,d]).
+false.
+
+?- intersect([1,2,3,4],[5,4,1,6]).
+true .
+
+?- intersect([1,2,3,4],[5,6]).
+false.
+
+?- all_intersect([[1,2,3],[5,4,6]],[3,4]).
+true .
+
+?- all_intersect([],[3,4]).
+true.
+
+?- all_intersect([[1,2,3],[1,2,5],[5,4,6]],[3,4]).
+true .

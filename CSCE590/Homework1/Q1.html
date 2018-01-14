@@ -1,0 +1,63 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Add Homework</title>
+  <meta name="description" content="CSCE590 Homework One">
+  <meta name="author" content="Anthony Frazier">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="q1.css">
+</head>
+
+<body>
+<div class="pure-g">
+    <div class="pure-u-1-3"><a href=""><button onclick="">Go Back</button></a></div>
+    <div class="pure-u-1-3"><p>Add Homework</p></div>
+	<div class="pure-u-1-3"><id = "rightButton"><a href=""><button onclick="">Add</button></a></div>
+</div>
+
+<form class="pure-form pure-form-aligned">
+    <fieldset>
+        <div class="pure-control-group">
+            <label for="classID">Class Selection</label>
+            <input id="classID" type="text" placeholder="CSCE590">
+            <span class="pure-form-message-inline">This is a required field.</span>
+        </div>
+
+        <div class="pure-control-group">
+            <label for="homeworkName">Add Homework Name</label>
+            <input id="homeworkName" type="text" placeholder="Add Homework Name">
+            <span class="pure-form-message-inline">This is a required field.</span>
+        </div>
+
+        <div class="pure-control-group">
+            <label for="date">Date and Time</label>
+            <input id="date" type="datetime-local" placeholder="Date and Time">
+            <span class="pure-form-message-inline">This is a required field.</span>
+        </div>
+
+        <div class="pure-control-group">
+            <label for="setPriority">Set Priority</label>
+            <input id="setPriority" type="range" placeholder="">
+            <span class="pure-form-message-inline">This is a required field.</span>
+        </div>
+
+        <div class="pure-control-group">
+            <label for="pickColor">Pick Calendar Color</label>
+            <input id="pickColor" type="color" placeholder="black">
+            <span class="pure-form-message-inline">This is a required field.</span>
+        </div>
+
+        <div class="pure-control-group">
+            <label for="description">Description</label>
+            <input id="description" type="description" placeholder="Add description here">
+            <span class="pure-form-message-inline">This is a required field.</span>
+        </div>
+    </fieldset>
+</form>
+
+</body>
+</html>

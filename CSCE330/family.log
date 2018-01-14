@@ -1,0 +1,79 @@
+// Anthony Frazier
+// CSCE330 Homework 3
+// September 26, 2017
+
+?- mother(X,Y).
+X = antonietta,
+Y = alberto .
+
+?- grand_parent(X,Y).
+X = guido,
+Y = marco .
+
+?- great_grand_mother(X,Y).
+X = guido,
+Y = sara .
+
+?- sibling(X,Y).
+X = alberto,
+Y = giulio .
+
+?- brother(X,Y).
+X = alberto,
+Y = giulio .
+
+?- sister(X,Y).
+X = clara,
+Y = dante .
+
+?- half_sibling(X,Y).
+X = alberto,
+Y = giulio .
+
+?- full_sibling(X,Y).
+X = alberto,
+Y = giulio .
+
+?- first_cousin(X,Y).
+X = dante,
+Y = sam .
+
+?- second_cousin(X,Y).
+X = dante,
+Y = sara 
+
+?- half_first_cousin(X,Y).
+X = dante,
+Y = sam .
+
+?- double_first_cousin(X,Y).
+X = dante,
+Y = sam .
+
+?- first_cousin_twice_removed(X,Y).
+false.
+
+?- descendant(X,Y).
+X = alberto,
+Y = guido .
+
+?- ancestor(X,Y).
+false.
+
+?- cousin(X,Y).
+X = dante,
+Y = sara .
+
+?- closest_common_ancestor(X,Y).
+ERROR: [Thread 3] Undefined procedure: closest_common_ancestor/2
+ERROR: [Thread 3]     However, there are definitions for:
+ERROR: [Thread 3]         closest_common_ancestor/3
+false.
+
+?- closest_common_ancestor(X,Y,Z).
+false.
+
+?- write_descendant_chain(X,Y).
+alberto is a child of guido
+X = alberto,
+Y = guido .
