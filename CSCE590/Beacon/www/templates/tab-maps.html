@@ -1,0 +1,13 @@
+<ion-view cache-view="false" title="Map Overview" >
+    <ion-nav-buttons side="Left">
+        <button class="button" ng-click="exit()">
+            Exit
+        </button>
+    </ion-nav-buttons>
+    <ion-content  ng-init="initialize()" scroll="false" data-tap-disabled="true">
+        <div id="map" data-tap-disabled="true"></div>
+    </ion-content>
+    <button class="button" ng-click="centerOnMe()">
+            Center
+        </button>
+</ion-view>

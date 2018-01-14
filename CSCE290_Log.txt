@@ -1,0 +1,38 @@
+This is an attempt to mark my work on this group project, although it is not definitive, as I keep forgetting to update it.
+
+-November 10- 
+1:00 PM -Created git-hub reposity, Uploaded files to repository and created branches for each group member. -ANF
+3:05 PM -Summary from class; Create a user guide for Joe Q. Public, as to what is needed, input parameters, how to use this in very basic sense. 5-7 pages. Document the code, get rid of any 'dead code'; Create a systems guide to be handed off to a programmer detailing the ins and outs of the code, how the modules work, variables, etc. Execution order, how are the methods connected, is it a pure tree or do the classes communicate. Start from the top. A hand drawn 'uml' style correlation of all the classes, methods, etc would be a good appendix.
+
+-November 14-
+
+6:45 PM - Contacted group members via dropbox message service; Was able to succesfully contact all group members by 3:04 PM 11/15/16
+
+-November 16- 
+
+1:20 PM - Modified text file created by M. Cantwell and turned into .docx. Fleshed out and greatly modified his shorthand to current version. Pushed Group9_7A to github and created a googledoc, which was sent to the group via MMS.
+
+-November 22-
+
+10:00 AM - Group chat via text about assigning portions of the project out, physical meeting schedule for after 240 class this afternoon.
+11:59 AM - Merged M. Cantwell's formatting changes into master branch of github.
+2:36 PM - M. Cantwell sent new Google Docs for User Guide and Systems Guide.
+
+-November 29-
+
+Over the last several days, have contacted group members and coordinated github updates. Most, if not all of the commenting of the code has been finished. Carson has claimed ownership of the user guide. Micheal and myself are working on the systems guide.
+12:00 PM - Making final pass through code to ensure everything is commented.
+1:00 PM - Updated onepct.cc, commenting RunSimulation1 and 2. Added objective overview for onepct.cc
+1:15 PM - Updated onevoter.cc, added objective overview
+Added objective overview for all classes.
+4:30 PM - Finalized objective overview for all .cc classes. Added Group9 tag to all files.
+5:30 PM - Worked on System Guide, laid out three categories and worked on main.h main.cc configuration.h and configuration.cc in all three categories.
+
+-November 30-
+10:30 AM - 12:15 PM Made significant strides on System Guide. Finished work on the variables section, and have completely written the step-by-step guide from beginning execution to RunSimulationPct so far.
+12:15 - 7:30 Finished 'variables used' section completely. Have worked on Step by Step up to DoStatistics, and from output HISTO STATIONS: station_count to the end
+
+
+
+*Modified by: CSCE240 Group9 Fall 2016
+* (M.CANTWELL, R.CARFF, A.FRAZIER, C.KAYLOR, S.MARTIN)

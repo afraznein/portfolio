@@ -2,7 +2,7 @@
 # Anthony Frazier
 # 00187888
 # April 22, 2016
-.data
+
 FPNum:  .word 0x0
 baseadd: .space 200
 

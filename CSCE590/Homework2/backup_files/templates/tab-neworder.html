@@ -1,0 +1,36 @@
+<ion-view view-title="New Order" ng-controller="NewOrderCtrl as controller">
+    <ion-content class="padding">
+        <h3 style="text-align: center;">Add a New Order</h3>
+        <h4 style="text-align: center;">Product</h4>
+        <div class="list">
+            <label class="item item-input item-floating-label">
+                <input type="text" placeholder="Name" ng-model="order.name">
+            </label>
+            <label class="item item-input item-floating-label">
+                <input type="text" placeholder="Quantity" ng-model="order.qty">
+            </label>
+            <label class="item item-input item-floating-label">
+                <input type="text" placeholder="Price" ng-model="order.price">
+            </label>
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    Category
+                </div>
+                <select ng-model="order.category">
+                    <option value="0">Food</option>
+                    <option value="1">Stationary</option>
+                    <option value="2">Clothing</option>
+                </select>
+            </label>
+            <label class="item item-input item-floating-label">
+                <input type="text" placeholder="Order Date" ng-model="order.date">
+            </label>
+        </div>
+        <button class="button button-full button-positive" ng-click="neworder(order)">
+            Add
+        </button>
+        <button class="button button-full button-positive" ng-click="cancel()">
+            Cancel
+        </button>
+    </ion-content>
+</ion-view>

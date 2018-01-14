@@ -1,0 +1,157 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class DFA {
+	
+	private int[][] transition;
+	private int[] accepting;
+	private char[] alphabet;
+	
+	DFA()
+	{
+		this.transition = null;
+		this.accepting = null;
+		this.alphabet = null;
+	}
+	
+	public int[][] getTransition() {
+		return transition;
+	}
+
+	public void setTransition(int[][] transition) {
+		this.transition = transition;
+	}
+
+	public int[] getAccepting() {
+		return accepting;
+	}
+
+	public void setAccepting(int[] accepting) {
+		this.accepting = accepting;
+	}
+
+	public char[] getAlphabet() {
+		return alphabet;
+	}
+
+	public void setAlphabet(char[] alphabet) {
+		this.alphabet = alphabet;
+	}
+
+	public static DFA ScanDescription(File inputFile)
+{ 
+	// This method will parse over a DFA description, and build:
+	//  int[][] dfa consisting of the transition table
+	//  int[] accepting consisting of a an array of accepting states 
+	//  char[] alphabet consisting of the allowable alphabet of 
+	//  the dfa
+	
+	DFA returningDFA = new DFA();
+	
+	int[][] transition = null;
+	int[] accepting = null;
+	
+	// Only read the input if the file exists.
+	try {  
+		
+		Scanner input= new Scanner(inputFile);
+		
+		// Initialize variables
+		String line = "";
+		String token = "";
+		int states = 0;
+		
+		// ** First line (single, positive decimal int): Number of states: n. DFA will have n states, with Q= {0,...,n-1}
+		
+		// Parse over the first line until we find ":" with custom delimiter
+		// 	i.e. removes "Number of states"
+		token = input.useDelimiter(":").next();
+
+		// It is important to note that in a n state DFA, we will have states 0 -> n-1
+		states = Integer.parseInt(input.nextLine().replaceAll(": | \\s", ""));
+		System.out.println();
+		System.out.println("The number of states in this dfa is: " + states + "\n");
+		System.out.println("Correctly parsed number of states" + "\n");
+		
+		
+		// ** Second line(list of non-negative int): List of states that are accepting. Numbers separated by whitespace, in increasing order.
+		
+		// Parse over the first line until we find ":" with custom delimiter
+		//	i.e. removes "Accepting states:"
+		input.useDelimiter(":").next();
+		input.useDelimiter("\\s").next();
+		
+		// Reset our string, create our accepting array and parse next line
+		token = "";
+		int[] accepting = new int[states-1];
+		System.out.println("This is our accepting array: " + "\n");
+		// Parse over the line until we hit \nAlphabet:. Put each int into the accepting array as accepting states.
+		for (int i = 0; i < states; i++)
+		{
+			token = input.useDelimiter("\\s").next();
+			if (token.equals("Alphabet:"))
+			{
+				i = states;
+			}
+			else
+			{
+				accepting[i] = Integer.parseInt(token);
+				System.out.print(accepting[i] + ",");
+			}	
+		}
+		System.out.println();
+		System.out.println();
+		System.out.println("Correctly parsed accepting array." + "\n");
+		
+		// ** Third line: Alphabet: followed by a string of chars starting with the first char after the space after the first
+		//  colon, and runs through the end of the line (not including final newline).
+		//  ALpha is ascii, no carriage returns, line feeds, new lines, etc. Space is allowed. Ascii 32-126 are allowed.
+		
+		String alpha = input.nextLine();
+		// Must account for leading space, and remove it.
+		alpha = alpha.substring(1, alpha.length());
+		System.out.println("This is the alphabet string: " + alpha + "\n");
+		
+		char[] alphabet = new char[alpha.length()];
+		System.out.println("This is the alphabet[] array: " + "\n");
+		for(int x = 0; x < alpha.length(); x++)
+		{
+			alphabet[x] = alpha.charAt(x);
+			System.out.print(alphabet[x]);
+		}
+		System.out.println();
+		System.out.println();
+		System.out.println("Correctly parsed alphabet" + "\n");
+		// ** Remaining Lines: Transition table: rows of the table are terminated with a newline character.
+		//      Each row consists of a sequence of nonnegative int seperated by whitespace, one number for each alphabet symbol.
+
+
+		// Create our dfa array based on the number of states
+		transition = new int[states-1][alphabet.length];
+		
+		int count = 0;
+		for (int i = 0; i < states-1; i++)
+		{
+			System.out.println("State " + i + ": " + "\n");
+			for (int j = 0; j < alphabet.length; j++)
+			{
+				transition[i][j] = input.nextInt();
+				System.out.print(alphabet[j] + " transition: " + transition[i][j] + " " + "\n");
+			}
+			System.out.println();
+			input.nextLine();
+			
+		}
+		System.out.println("Correctly parsed transition table" + "\n");
+	} catch (FileNotFoundException e) {
+		e.printStackTrace();
+	}
+	
+	returningDFA.setTransition(transition);
+	
+	
+	return returningDFA;
+}
+}
+}

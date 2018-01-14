@@ -1,0 +1,17 @@
+How much do you want to be involved with this process, want kind of progress updates do you want?
+
+What exact functionality do you want from the app?
+
+Who is the app being designed for? Will it primarily be used by athletes to enter their own information, or will it be used by an athletic trainer.
+
+How are athletes entered into the system initially? Do you want athletes entering their own info?
+
+How is Hydration calculated, especially to alert the head trainer for a dehydration level. If someone is dehydrated, who do we need to alert? 'Class of users'.
+
+Is there anyone else you would want us to speak to, to get input.
+
+What is the current process for calculating this?
+
+How much data do you want available to you? Do you want records for the past week, month, forever?
+
+How do they want the data presented?

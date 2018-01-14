@@ -1,0 +1,15 @@
+<ion-view view-title="Orders">
+    <ion-content>
+    <div class="bar bar-header">
+    <button ng-click="newOrder()" class="button button-full">
+    New Order</button>
+    </div>
+    <ion-list>
+
+    	<ion-label>Product Name</ion-label>
+    	<ion-item href= "#tab/orders/{{order.ProductName}}">
+  	    <ion-option-button class="button button-full" ng-click="remove(order)"> Remove Order </ion-option-button>
+		</ion-item>
+    </ion-list>
+    </ion-content>
+</ion-view>

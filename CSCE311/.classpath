@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="Project2/src"/>
+	<classpathentry kind="src" path="Project3/src"/>
+	<classpathentry kind="lib" path="Project1/bin/Demo.jar"/>
+	<classpathentry kind="lib" path="Project1/Demo.jar"/>
+	<classpathentry kind="lib" path="Project1/src/Demo.jar"/>
+	<classpathentry kind="lib" path="Project2/OSP.jar"/>
+	<classpathentry kind="lib" path="Project3/bin/Demo.jar"/>
+	<classpathentry kind="lib" path="Project3/OSP.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="Project2/bin"/>
+</classpath>

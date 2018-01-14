@@ -1,0 +1,20 @@
+/* Name: Anthony Frazier
+ * Class: CSCE355
+ * Due Date: November 21, 2017
+ * Assignment: Programming Assignment. You may choose to implement two or more of the following functions:
+ * 
+ */
+
+/* Minimizing a DFA:
+* The input DFA is read from a text file given as the first command line
+argument, and the output DFA is written to standard output. You should use the table-of-distinguishable-states
+method described in class to do the minimization. You do not need
+to output the distinguishability table, but you may optionally do so to standard error if you
+want. Both the input and output DFA descriptions adhere to the format described below.
+The ordering of the states of the output DFA is not completely determined, so correct answers
+may differ up to the ordering of states. That's okay, we'll take that into account using our
+own script that determines whether two DFAs are the same up to reordering states.
+	 */
+public class MyMinimizer {
+
+}

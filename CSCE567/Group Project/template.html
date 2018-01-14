@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="https://d3js.org/topojson.v2.min.js"></script>		
+
+	<head>
+		<title> Peer to Peer Loan Stats: Before and After the Recession </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="A chloropleth and bar-graph data visualization to demonstrate the changes in peer-to-peer lending using the recession as a point of change.">
+		<style> 	</style>
+
+
+		<script type="text/javascript">
+	    var myPaths;
+	    var margin = { top: 10, right: 0, bottom: 30, left: 0 };
+	    var svgWidth = 800 - margin.left - margin.right;
+	    var svgHeight = 500 - margin.top - margin.bottom;
+
+	    loadData2();
+
+	    function loadData2() {
+	      d3.csv("/CSCE567_GroupThree_Spring17/RequestedAmtMap/requestedCSV.csv", function (err, data) {
+	        myData = data;
+	        amounts = {}
+	        for(i = 0; i < 50; i++){
+	          
+
+	          j = parseInt(myData[i].State_Code);
+	          if(amounts[j] == null){
+	            amounts[j] = 0;
+	          }
+	           amounts[j] = parseFloat(amounts[j]) + parseFloat(myData[i].Amount.replace(/,/g , ""));
+	          //amounts[j] = parseFloat(amounts[j]) + parseFloat(myData[i].funded.amnt);
+	        }
+
+	        createChoroplethMap(myData, amounts);
+	      });
+	    }
+
+	    function createChoroplethMap(myData, amounts) {
+
+	      d3.json("us-10m.json", function (json) {
+	        myPaths = json;
+
+	        var svg = d3.select("#map")
+	          .append("svg")
+	          .attr("width", 800)//svgWidth + margin.left + margin.right)
+	          .attr("height", 800)//svgHeight + margin.top + margin.bottom)
+	          .append("g")
+	          //.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+	          .attr("transform", "translate(" + 10 + "," + 10 + ")");
+
+	        var projection = d3.geoAlbersUsa()
+	          .translate([svgWidth / 2, svgHeight / 2])
+	          .scale([1000]);
+	        var path = d3.geoPath()
+	          .projection(projection);
+	        // add states
+	        var states = svg.selectAll("path")
+	          .data(topojson.feature(myPaths, myPaths.objects.states).features)
+	          .enter()
+	          .append("path")
+	          .attr("d", path)
+	          //.attr("fill", d3.hsl(250, .5, .5))
+	          ///////////////////WORKING ON THISSFGJSERGME
+	          .attr("fill", function (d) {
+	            //console.log()
+	            return d3.hsl(220, 1,
+	              //console.log(amounts[32]),
+	              d3.scaleLinear().domain([700000000, 300000])( parseFloat(amounts[parseInt(d.id)]) )
+	            );
+	          }
+	          )
+	          .style("stroke", "black")
+	          //.attr("outline", "black")
+	          .on("mouseover", function (d) {
+	            d3.select(this)
+	              .attr("fill", "red");//,
+	          })
+	          .on("mouseleave", function (d) {
+	            d3.select(this)
+	           
+	          })
+	         
+	          .on("click", function (d) {
+	            console.log(d.id);
+	            console.log(amounts[d.id]);
+	            
+	          });
+
+	      });
+	    }
+  </script>
+	</head>
+	<body>
+
+	<h1 id="header"> Peer to Peer Loan Stats: Before and After the Recession </h1>
+
+	<a class="pure-button pure-button-primary" value="AvgAmtReqBefore">Average Loan Amount Requested: Before</a>
+	<a class="pure-button pure-button-primary" value="AvgAmtReqBefore">Average Loan Amount Requested: After</a>
+
+	<a class="pure-button pure-button-primary" value="AvgAmtReqBefore">Average Loan Amount Funded: Before</a>
+	<a class="pure-button pure-button-primary" value="AvgAmtReqBefore">Average Loan Amount Funded: After</a>
+
+
+  <div id="map" style="float:left" , width: 50%>
+  </div>
+  <div id="bars" style="float:left">
+  </div>
+	</body>
+
+</html>
+

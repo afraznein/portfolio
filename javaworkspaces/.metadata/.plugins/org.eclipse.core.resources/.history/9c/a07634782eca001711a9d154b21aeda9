@@ -1,0 +1,18 @@
+/* Name: Anthony Frazier
+ * Class: CSCE355
+ * Due Date: November 21, 2017
+ * Assignment: Programming Assignment.
+ *
+	/* Determining properties of a DFA:
+	 * The sole command line argument gives the file describing
+the DFA. Output is to standard output and consists of just two words separated by
+whitespace: the first is either "empty" or "nonempty", and the second is either "finite" or
+"infinite". Note that the language of a DFA is nonempty iff some final state is reachable
+from the start state, and the language is infinite iff there is some cycle that is reachable from
+the start state and from which a final state is reachable
+	 */
+
+
+public class MyProperties {
+
+}

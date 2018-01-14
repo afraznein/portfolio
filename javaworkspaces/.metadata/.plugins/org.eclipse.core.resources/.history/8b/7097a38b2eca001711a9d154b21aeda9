@@ -1,0 +1,15 @@
+/* Name: Anthony Frazier
+ * Class: CSCE355
+ * Due Date: November 21, 2017
+ * Assignment: Programming Assignment.
+/* Closure Properties: complement and intersection:
+	 * There will be either one or two command
+line arguments. If one, then it is the name of a file containing the description of a DFA A,
+and you are to output the complementary DFA ¬A (see Definition 7.4 of the course notes).
+If two arguments, then they both are names of text files containing DFAs A and B, and you
+are to output the product construction A ∧ B (see Definition 7.4 of the course notes). A and
+B will have the same alphabet. In each case, write to standard output.
+	 */
+public class MyClosure {
+
+}

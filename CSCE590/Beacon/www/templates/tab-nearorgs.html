@@ -1,0 +1,12 @@
+<ion-view cache-view="false" view-title="Nearby Organizations">
+    <ion-content >
+        <ion-list>
+            <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="org in nearorgs" type="item-text-wrap">
+                <!-- <img ng-src="{{org.img}}"> -->
+                <!-- <h2>Id: {{org.id}}</h2> -->
+                <h2>Name: {{org.name}}</h2>
+                <h2>Address: {{org.address}}</h2>                
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

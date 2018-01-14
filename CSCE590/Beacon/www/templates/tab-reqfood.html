@@ -1,0 +1,30 @@
+<ion-view cache-view="false" view-title="Request" ng-controller="ReqFoodCtrl as controller">
+    <ion-content class="padding">
+        <h3 style="text-align: center;">Food / Water / Clothing</h3>
+        <h2></h2>
+        <div class="list">        
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    Category
+                </div>
+                <select ng-model="req.category">
+                    <option value="Food">Food</option>
+                    <option value="Water">Water</option>
+                    <option value="Clothing">Clothing</option>
+                </select>
+            </label>
+            <label class="item item-input item-floating-label">
+                <input type="number" placeholder="Quantity" ng-model="req.qty">
+            </label>
+            <label class="item item-input item-floating-label">
+                <input type="date" placeholder="Order Date" ng-model="req.date">
+            </label>
+        </div>
+        <button class="button button-full button-positive" ng-click="reqfood(req)">
+            Add
+        </button>
+        <button class="button button-full button-positive" ng-click="cancel()">
+            Cancel
+        </button>
+    </ion-content>
+</ion-view>
