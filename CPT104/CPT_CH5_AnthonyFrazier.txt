@@ -1,0 +1,394 @@
+Student Name: Anthony Frazier
+Student Email: anthony.frazier1986@gmail.com
+
+Site Title: Technology In Action, 9e
+Book's Title: Technology In Action, 9e
+Book's Author: Evans
+Location on Site: Ch 05: Using System Software: The Operating System, Utility Programs, and File Management > Online Study Guide
+
+
+
+
+
+
+100% Correct of 34 Scored items:
+34 correct: 100%
+0 incorrect: 0%
+-------------------------------------------------------------------
+
+25 total questions in quiz (with 1 question containing multiple pairs), for a total of 34 scored items
+
+
+Submitted on February 25, 2014 at  2:19 AM (UTC/GMT)
+
+Time Spent::
+
+
+-------------------------------------------------------------------
+Question 1
+
+
+
+What Windows 7 feature allows you to capture an entire screen image of a window or object on the screen?
+
+Correct: Snipping Tool
+
+Correct. The Snipping Tool, included in Windows 7, allows you to capture an entire screen image or a freeform or rectangular "snip" of any window or object on the screen.
+
+
+
+-------------------------------------------------------------------
+Question 2
+
+
+
+What was the first widely installed operating system in personal computers?
+
+Correct: MS-DOS
+
+Correct. MS-DOS was the first widely installed operating system in personal computers.
+
+
+
+-------------------------------------------------------------------
+Question 3
+
+
+
+When RAM runs out of space, it borrows space from the hard drive. The space on the hard drive used by the operating system is called __________.
+
+Correct: virtual memory
+
+Correct. Virtual memory is the space on the hard drive that is used by the operating system when RAM runs out of space.
+
+
+
+-------------------------------------------------------------------
+Question 4
+
+
+
+AT&T licensed UNIX to what company?
+
+Correct: Santa Cruz Operation Group
+
+Correct. The Santa Cruz Operation Group was given the license to UNIX by AT&T.
+
+
+
+-------------------------------------------------------------------
+Question 5
+
+
+
+Which version of Windows does the text state is the first version to provide multitasking capabilities?
+
+Correct: Windows 95
+
+Correct: Windows 95 was the first to incorporate multitasking capabilities.
+
+
+
+-------------------------------------------------------------------
+Question 6
+
+
+
+A program that helps coordinate all print jobs currently being sent to the printer is a(n) __________.
+
+Correct: spooler
+
+Correct. A spooler is a program that helps coordinate all print jobs currently being sent to the printer.
+
+
+
+-------------------------------------------------------------------
+Question 7
+
+
+
+Which of the following is NOT a step involved in the boot process?
+
+Correct: Run an error check of all disks
+
+Correct. The boot process does not run an error check of the disks.
+
+
+
+-------------------------------------------------------------------
+Question 8
+
+
+
+Google has developed the Android operating system based on the __________ operating system.
+
+Correct: Linux
+
+Correct. Android is a new operating system that is Linux based.
+
+
+
+-------------------------------------------------------------------
+Question 9
+
+
+
+Which of the following is a program that manages the exchange of data between the operating system and all the input and output devices attached to the system?
+
+Correct: BIOS
+
+Correct. The BIOS manages the exchange of data between the operating system and all the input and output devices attached to the system.
+
+
+
+-------------------------------------------------------------------
+Question 10
+
+
+
+__________ is when the operating system processes the task assigned a higher priority before processing a task with a lower priority.
+
+Correct: Preemptive multitasking
+
+Correct. Preemptive multitasking processes tasks with a higher priority before processing a task with a lower priority.
+
+
+
+-------------------------------------------------------------------
+Question 11
+
+
+
+The Task Manager utility can be accessed in any of the following ways EXCEPT __________.
+
+Correct: System Tools
+
+Correct. You cannot access the Task Manager from System Tools.
+
+
+
+-------------------------------------------------------------------
+Question 12
+
+
+
+The utility program that checks the hard drive for unnecessary or damaged files is __________.
+
+Correct: Error-checking
+
+Correct. Error-checking is a utility program that checks the hard drive for unnecessary or damaged files.
+
+
+
+-------------------------------------------------------------------
+Question 13
+
+
+
+Which of these file extensions can be read by any program that can read text?
+
+Correct: .rtf and .txt
+
+Correct. The .rtf and .txt file extensions can be read by any text document software.
+
+
+
+-------------------------------------------------------------------
+Question 14
+
+
+
+A menu driven interface is one in which you enter commands to communicate with the computer system.
+
+Correct: False
+
+Correct. A command-driven interface is one in which you enter commands to communicate with the computer system.
+
+
+
+-------------------------------------------------------------------
+Question 15
+
+
+
+Google has developed Google Docs application and Chrome browser that are the initial components of a completely Web-based operating environment.
+
+Correct: True
+
+Correct: Google has developed Google Docs application and Chrome browser that are the initial components of a completely Web-based operating environment.
+
+
+
+-------------------------------------------------------------------
+Question 16
+
+
+
+A Web-based operating environment requires that an application be installed on the user's computer before it can be accessed on the Web.
+
+Correct: False
+
+Correct. A Web-based operating environment means that it is run entirely on the Web and does not need to be installed on your computer.
+
+
+
+-------------------------------------------------------------------
+Question 17
+
+
+
+Safe mode is a feature in the operating system that lets you view and change the properties of all devices attached to your computer.
+
+Correct: False
+
+Correct. Device Manageris a feature in the operating system that lets you view and change the properties of all devices attached to your computer.
+
+
+
+-------------------------------------------------------------------
+Question 18
+
+
+
+A widget is a mini-application that enables quick access to frequently used tools and activities on the Mac operating system.
+
+Correct: True
+
+Correct. A widget is a mini-application that enables quick access to frequently used tools and activities on the Mac operating system.
+
+
+
+-------------------------------------------------------------------
+Question 19
+
+
+
+ A library gathers files from different locations and displays them as if they were all saved in a single folder.
+
+Correct: True
+
+Correct. A library allows you to organize similar files together while keeping them stored in their original locations.
+
+
+
+-------------------------------------------------------------------
+Question 20
+
+
+
+A Mac uses the Mac OS X operating system, so if you want to use Windows, you must use a PC.
+
+Correct: False
+
+Correct. A utility called Boot Camp enables you to run Windows on a Mac.
+
+
+
+-------------------------------------------------------------------
+Question 21
+
+
+
+Adding file extensions are necessary when saving a file in most applications under the Windows operating system.
+
+Correct: False
+
+Correct. Most applications running under the Windows operating system automatically add the extension. Mac and Linux operating systems do not require a file extension.
+
+
+
+-------------------------------------------------------------------
+Question 22
+
+
+
+Windows 95 became the first commercially available operating system to incorporate a graphical user interface (GUI) with user-friendly point-and-click technology.
+
+Correct: False
+
+Correct. Mac OS was the first commercially available operating system to incorporate a graphical user interface (GUI).
+
+
+
+-------------------------------------------------------------------
+Question 23
+
+
+
+A file compression utility is a program that removes redundancies in a file to reduce the file size.
+
+Correct: True
+
+Correct. A file compression utility removes redundancies in a file to reduce the file size.
+
+
+
+-------------------------------------------------------------------
+Question 24
+
+
+
+An embedded system is also known as firmware.
+
+Correct: False
+
+Correct. Embedded systems are also known as real-time operating systems (RTOS).
+
+
+
+-------------------------------------------------------------------
+Question 25
+
+
+
+Match the word with the definition.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+25.1 Firmware
+
+Correct: C. Instructions permanently installed onto computer chips
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+25.2 Platform
+
+Correct: J. Combination of operating system and processor
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+25.3 Paging
+
+Correct: D. Swapping files from RAM to the hard drive
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+25.4 Device driver
+
+Correct: H. Special program that facilitates communication between a device and the operating system
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+25.5 Kernel
+
+Correct: I. Responsible for managing the processor and all other components of the computer system
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+25.6 File management
+
+Correct: G. Providing organizational structure to the computer's components
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+25.7 File allocation table (FAT)
+
+Correct: A. Index of all sector numbers in a table
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+25.8 System restore point
+
+Correct: F. A snapshot of your entire system's settings
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+25.9 Error-checking
+
+Correct: B. Previously known as ScanDisk
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+25.10 Library
+
+Correct: E. A collection that gathers files from different locations and displays them as if they were saved in a single folder

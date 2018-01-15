@@ -1,0 +1,18 @@
+login as: 247frazier
+247frazier@dev.mtc-ist.com's password:
+Last login: Thu Sep 11 11:29:32 2014 from 199.46.11.200
+247frazier@dev [~]# date > Project1
+247frazier@dev [~]# cal >> Project1
+247frazier@dev [~]# who >> Project1
+247frazier@dev [~]# cat Project1
+Fri Sep 12 11:39:03 EDT 2014
+   September 2014
+Su Mo Tu We Th Fr Sa
+    1  2  3  4  5  6
+ 7  8  9 10 11 12 13
+14 15 16 17 18 19 20
+21 22 23 24 25 26 27
+28 29 30
+
+247frazier pts/0        2014-09-12 11:38 (24.211.96.76)
+247frazier@dev [~]#
