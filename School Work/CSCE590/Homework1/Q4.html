@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>62,000 top US doctors available</title>
+  <meta name="description" content="CSCE590 Homework One">
+  <meta name="author" content="Anthony Frazier">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="q1.css">
+</head>
+
+<body>
+<div class="pure-menu pure-menu-horizontal">
+    <a href="#" class="pure-menu-heading pure-menu-link"><img src="image1.jpg" id="image1" onclick="" /></a>
+    <ul class="pure-menu-list">
+        <li class="pure-menu-item"><a href="#" class="pure-menu-link"><img src="image2.jpg" id="image2" onclick="" /></a></a></li>
+        <li class="pure-menu-item"><a href="#" class="pure-menu-link"><img src="image3.jpg" id="image3" onclick="" /></a></a></li>
+        <li class="pure-menu-item"><a href="#" class="pure-menu-link"><img src="image4.jpg" id="image4" onclick="" /></a></a></li>
+        <li class="pure-menu-item"><a href="#" class="pure-menu-link"><img src="image5.jpg" id="image5" onclick="" /></a></a></li>
+        <li class="pure-menu-item"><a href="#" class="pure-menu-link"><img src="image6.jpg" id="image6" onclick="" /></a></a></li>
+    </ul>
+</div>
+
+<img class = "img-circle" src="doctor.jpg" id="doctor"/>
+<img class = "img-circle" src="Doc_Under.jpg" id="description"/>
+
+<div class="pure-g">
+    <div class="pure-u-1-4"><p id="learn">About</p></div>
+    <div class="pure-u-1-4"><p id="action">Feed</p></div>
+    <div class="pure-u-1-4"><p id="talk">Network</p></div>
+    <div class="pure-u-1-4"><p id="talk">Checklists</p></div>
+</div>
+
+<div class="pure-g">
+    <div class="pure-u-1-2">
+      <ul class="pure-menu-list">
+      <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Welcome Person!</a></li>
+      <li class="pure-menu-item"><iframe width="420" height="315" src="https://www.youtube.com/embed/R7yfISlGLNU"></iframe></li>
+      </ul>
+    </div>
+
+    <div class="pure-u-1-2">
+     <div class="pure-menu custom-restricted-width">
+    <ul class="pure-menu-list">
+        <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link" id = "top">Tests and stuff</a></li>
+        <li class="pure-menu-item"><a href="#" class="pure-menu-link" id = "bottom">
+        <div id="map"></div>
+        <script>
+        function initMap() {
+        var uluru = {lat: 34.002092, lng: -81.208696};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+        }
+        </script>
+       <script async defer
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-cPJ9dxvdhd8Upp6UDn4QXUkBCRqwGhA&callback=initMap">
+        </script>  
+        </a></li>
+    </ul>
+    </div>   
+    </div>
+</div>
+
+
+</body>
+</html>

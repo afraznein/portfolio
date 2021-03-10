@@ -1,0 +1,50 @@
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.PrintStream;
+
+/* Name: Anthony Frazier
+ * Class: CSCE355
+ * Due Date: November 21, 2017
+ * Assignment: Programming Assignment.
+ * 
+ * Minimizing a DFA:
+ * The input DFA is read from a text file given as the first command line
+ * argument, and the output DFA is written to standard output. You should use the table-of-distinguishable-states
+ * method described in class to do the minimization. You do not need
+ * to output the distinguishability table, but you may optionally do so to standard error if you
+ * want. Both the input and output DFA descriptions adhere to the format described below.
+ * The ordering of the states of the output DFA is not completely determined, so correct answers
+ * may differ up to the ordering of states. That's okay, we'll take that into account using our
+ * own script that determines whether two DFAs are the same up to reordering states.
+*/
+public class MyMinimizer {
+
+	
+public static void main(String[] args) throws IOException
+{	//Set up error output. (This code is directly copied from a stack overflow example)
+	FileOutputStream f = new FileOutputStream("error_log.txt");	 
+	System.setErr(new PrintStream(f));
+	
+	DFA newDFA = null;
+	newDFA = Simulate(args);
+	newDFA = Minimize(newDFA);
+	
+} // end main
+
+public static DFA Simulate(String[] args) throws IOException
+{	
+	// This code is only slightly modified from my MySimulator.java
+	File inputFile1 = null;	
+	DFA newDFA = new DFA();
+	// Reads the file from the first argument line only if there is an argument
+	if (args.length > 0) inputFile1 = new File(args[0]); 
+	newDFA = DFA.ScanDescription(inputFile1);
+	return newDFA;
+} // end Simulate();
+
+public static DFA Minimize(DFA dfa)
+{
+	return null;
+}
+}

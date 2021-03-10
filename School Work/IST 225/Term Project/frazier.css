@@ -1,0 +1,40 @@
+body { background-color: #E0E0EB; color: #000000;
+       text-align: center;}
+ul { text-align: center; }
+ol { text-align: center; }
+table { text-align: center; }
+header {  background-color: #E0E0EB }
+footer { background-color: #E0E0EB color: #000000;
+	 text-align: center;}
+img { border-style: none; }
+h1 { text-align: center;  }
+h2 { text-align: center;
+     font-family: "Verdana", Georgia, Serif; }
+h3 { background-color: #FFFFFF;
+     font-family: "Verdana", Arial, sans-serif;}
+pre {  color: #1A1A1A;
+       text-align: center;  }
+
+#tile {	background-image: url("South_Carolina_Gamecocks_Block_C_logo.jpg");
+       	background-repeat: repeat;	}
+#tile { color: #000000;
+	text-shadow: 2px 2px #ff0000;}
+
+#content { text-align: center; }
+#content ul { list-style: none; }
+#content ul li { display: inline; }
+
+#content ol { list-style: none; }
+#content ol li { display: inline; }
+
+table.banana {  margin-left:auto; 
+    		margin-right:auto; }
+
+
+
+nav { height: 75px;
+      font-family: "Arial Black", Gadget, sans-serif;
+      text-align: center;
+      background-color: #9D9DA4 ;
+      color: #000000;
+      font-weight: bold;}

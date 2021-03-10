@@ -1,0 +1,6 @@
+body { background-color: #F5F5DC; color: #2E0000; }
+header { background-color: #D2B48C; }
+footer { background-color: #D3B48C; color: #000000; }
+img { border-style: none; }
+h3 { background-color: #E6D6A9; }
+ul { list-style-image: url(marker.gif)}

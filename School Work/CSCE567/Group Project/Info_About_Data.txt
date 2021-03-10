@@ -1,0 +1,24 @@
+id (Loan ID #)
+member_id
+loan_amnt
+funded_amnt
+funded_amnt_inv
+term
+int_rate
+grade:
+sub_grade:
+Lending Club’s interest rates take into account credit risk and market conditions. The final interest rate for each loan grade is the result of the following equation:
+
+Lending Club Base Rate + Adjustment for Risk & Volatility
+
+The Adjustment for Risk & Volatility is designed to cover expected losses and provide higher risk-adjusted returns for each loan grade increment from A1 to G5.
+
+The loan grade is the result of a formula that takes into account not only credit score, but also a combination of several indicators of credit risk from the credit report and loan application. All loans have either a 36- or 60-month term, with fixed interest rates and equal payments.
+
+LOAN GRADE	SUB-GRADE	BASE RATE	ADJUSTMENT	INTEREST RATE
+A		1		5.05%		0.27%		5.32%
+		2		5.05%		1.94%		6.99%
+		3		5.05%		2.19%		7.24%
+		4		5.05%		2.44%		7.49%
+		5		5.05%		2.94%		7.99%
+sub_grade

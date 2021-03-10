@@ -1,0 +1,13 @@
+{
+  "name": "Beacon",
+  "app_id": "e6c4fe4a",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
+}

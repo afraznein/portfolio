@@ -1,0 +1,164 @@
+//C++ shape example CSCE146 04/21/16
+// THIS IS A HEADER "Shape.h" FILE LIKE AN INTERFACE IN JAVA
+#include <iostream>;
+using namespace std;
+class Shape
+{
+	private:
+	int offset;
+	protected:
+	void SkipSpaces(int spaces);
+	public:
+	Shape();		// Constructor
+	~Shape();		// Deconstructor
+	int GetOffset();
+	void SetOffset(int anOffset);
+	void DrawHere();
+	void DrawAt(int lineNumber);
+};
+
+
+
+//THIS IS THE ACTUAL C++ FILE THE ABOVE IS A "HEADER FILE"
+
+#include "Shape.h"
+
+Shape::Shape()		// Constructor
+{
+
+	this->offset=0;
+}
+
+Shape::~Shape()		// Deconstructor
+{
+
+
+}
+
+int Shape::GetOffset()
+{
+	return this->offset;
+}
+
+void Shape::SetOffset(int anOffset)
+{
+	if (anOffset>0)
+		this->offset = anOffset;
+}
+
+void Shape::DrawHere()
+{
+	SkipSpaces(this->offset);
+	cout<<"*"<<endl;	// S.o.pl
+}
+
+void Shape::DrawAt(int lineNumber)
+{
+	for(int i =0; i<lineNumber;i++)
+		cout<<endl;
+	DrawHere();
+}
+
+void Shape:SkipSpaces(int spaces)
+{
+	for (inti-0; i<spaces;i++)
+	cout<<" ";
+}
+
+
+
+// HEADER FILE RECTANGLE.H TO SHOW INHERITANCE
+
+#include "Shape.h";
+
+class Rectangle : Shape	// this reads class rectangle IS A shape
+{
+	private:
+	int width;
+	int height;
+	void DrawSides();
+	void DrawHorizontalLine();
+	public:
+	Rectangle();
+	Rectangle(int anOffset, int aWidth, int aHeight);
+	~Rectangle();
+	void Set(int width, int height);
+	int getWidth();
+	int getHeight();
+	void DrawHere();
+};
+
+// RECTANGLE.CPP
+
+#include "Rectangle.h";
+
+Rectangle::Rectangle()
+{
+	this->width = 0;
+	this->height = 0;
+}
+
+Rectangle::Rectangle(int anOffset, int aWidth, int aHeight)
+{
+	this->SetOffset(anOffset);
+	this->Set(aWidth, aHeight);	
+}
+
+void Rectangle::Set(int aWidth, int aHeight)
+{
+	if (aWidth > 0 && aHeight > 0)
+	{
+		this->width = aWidth;
+		this->height = aHeight;
+	}
+}
+
+int Rectangle::GetHeight()
+{
+	return this->height;
+}
+
+int Rectangle::GetWidth()
+{
+	return this->width;
+}
+
+void Rectangle::DrawHere()
+{
+	this->DrawHorizontalLine();
+	this->DrawSides();
+	this->DrawHorizontalLine();
+}
+
+void Rectangle::DrawHorizontalLine()
+{
+	SkipSpaces(this->GetOFfset);
+	for(int i = 0; i<this-width;i++)
+		cout<<"-";
+	cout<<endl;
+}
+
+void Rectangle::DrawSides()
+{
+	for(int i = 0; i < this->height-2;i++)
+	{
+		SkipSpaces(this->GetOffset());
+		cout<<"|";
+		SkipSpaces(this-width-2);
+		cout<<"|"<<endl;
+	}
+}
+
+
+//	main method file
+
+#include "stdafx.h"
+#include "Shape.h"
+#include "Rectangle.h";
+
+int main()
+{
+	Rectangle* rect = new Rectangle();	// Star indicates rect will be a pointer
+	rect->DrawHere();
+	return 0;
+}

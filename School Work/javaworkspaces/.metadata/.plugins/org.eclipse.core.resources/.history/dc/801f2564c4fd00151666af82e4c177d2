@@ -1,0 +1,37 @@
+import java.lang.*;
+public class Homework8_Driver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("We will determine the Konigsberg Bridge Puzzle");
+		System.out.println("Generating Graph based on image provided in lab.");
+		Homework08 adjMatGrap = new Homework08(5);
+		// addEdge(toVertex, fromVertex, weight
+		adjMatGrap.addEdge(0,1,1); // Bridge A
+		adjMatGrap.addEdge(1,0,1); // Bridge A
+		
+		adjMatGrap.addEdge(0,1,2); // Bridge B
+		adjMatGrap.addEdge(1,0,2); // Bridge B
+		
+		adjMatGrap.addEdge(0,2,4); // Bridge C
+		adjMatGrap.addEdge(2,0,4); // Bridge C
+		
+		adjMatGrap.addEdge(1,2,3); // Bridge D
+		adjMatGrap.addEdge(2,1,3); // Bridge D
+		
+		
+
+		
+		System.out.println("Graph has four land masses 0, 1, 2 and 3.");
+		System.out.println("Graph has seven bridges, labelled One - Seven");
+		
+
+		System.out.println("Printing DFS for all");
+		for (int i = 0; i < 4; i++)
+		{
+			adjMatGrap.printDFSForAll(i);
+			System.out.println();
+		}
+	}
+
+}

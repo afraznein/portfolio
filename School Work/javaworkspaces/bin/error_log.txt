@@ -1,0 +1,319 @@
+
+The number of states in this dfa is: 5
+
+Correctly parsed number of states
+
+This is our accepting array: 
+
+1 4 
+
+Correctly parsed accepting array.
+
+This is the alphabet string: 01
+
+This is the alphabet[] array: 
+
+01
+
+Correctly parsed alphabet
+
+State 0: 
+
+State 1: 
+
+State 2: 
+
+State 3: 
+
+State 4: 
+
+Correctly parsed transition table
+
+
+The string we just passed for parsing is: 0000
+We just read the token: 0000 And we read the char:0
+
+ We are now in state 0
+
+We just read the token: 0000 And we read the char:0
+
+ We are now in state 0
+
+We just read the token: 0000 And we read the char:0
+
+ We are now in state 0
+
+We just read the token: 0000 And we read the char:0
+
+ We are now in state 0
+
+
+The string we just passed for parsing is: 0001
+We just read the token: 0001 And we read the char:0
+
+ We are now in state 0
+
+We just read the token: 0001 And we read the char:0
+
+ We are now in state 0
+
+We just read the token: 0001 And we read the char:0
+
+ We are now in state 0
+
+We just read the token: 0001 And we read the char:1
+
+ We are now in state 1
+
+
+The string we just passed for parsing is: 0010
+We just read the token: 0010 And we read the char:0
+
+ We are now in state 0
+
+We just read the token: 0010 And we read the char:0
+
+ We are now in state 0
+
+We just read the token: 0010 And we read the char:1
+
+ We are now in state 1
+
+We just read the token: 0010 And we read the char:0
+
+ We are now in state 2
+
+
+The string we just passed for parsing is: 0011
+We just read the token: 0011 And we read the char:0
+
+ We are now in state 0
+
+We just read the token: 0011 And we read the char:0
+
+ We are now in state 0
+
+We just read the token: 0011 And we read the char:1
+
+ We are now in state 1
+
+We just read the token: 0011 And we read the char:1
+
+ We are now in state 3
+
+
+The string we just passed for parsing is: 0100
+We just read the token: 0100 And we read the char:0
+
+ We are now in state 0
+
+We just read the token: 0100 And we read the char:1
+
+ We are now in state 1
+
+We just read the token: 0100 And we read the char:0
+
+ We are now in state 2
+
+We just read the token: 0100 And we read the char:0
+
+ We are now in state 4
+
+
+The string we just passed for parsing is: 0101
+We just read the token: 0101 And we read the char:0
+
+ We are now in state 0
+
+We just read the token: 0101 And we read the char:1
+
+ We are now in state 1
+
+We just read the token: 0101 And we read the char:0
+
+ We are now in state 2
+
+We just read the token: 0101 And we read the char:1
+
+ We are now in state 0
+
+
+The string we just passed for parsing is: 0110
+We just read the token: 0110 And we read the char:0
+
+ We are now in state 0
+
+We just read the token: 0110 And we read the char:1
+
+ We are now in state 1
+
+We just read the token: 0110 And we read the char:1
+
+ We are now in state 3
+
+We just read the token: 0110 And we read the char:0
+
+ We are now in state 1
+
+
+The string we just passed for parsing is: 0111
+We just read the token: 0111 And we read the char:0
+
+ We are now in state 0
+
+We just read the token: 0111 And we read the char:1
+
+ We are now in state 1
+
+We just read the token: 0111 And we read the char:1
+
+ We are now in state 3
+
+We just read the token: 0111 And we read the char:1
+
+ We are now in state 2
+
+
+The string we just passed for parsing is: 1000
+We just read the token: 1000 And we read the char:1
+
+ We are now in state 1
+
+We just read the token: 1000 And we read the char:0
+
+ We are now in state 2
+
+We just read the token: 1000 And we read the char:0
+
+ We are now in state 4
+
+We just read the token: 1000 And we read the char:0
+
+ We are now in state 3
+
+
+The string we just passed for parsing is: 1001
+We just read the token: 1001 And we read the char:1
+
+ We are now in state 1
+
+We just read the token: 1001 And we read the char:0
+
+ We are now in state 2
+
+We just read the token: 1001 And we read the char:0
+
+ We are now in state 4
+
+We just read the token: 1001 And we read the char:1
+
+ We are now in state 4
+
+
+The string we just passed for parsing is: 1010
+We just read the token: 1010 And we read the char:1
+
+ We are now in state 1
+
+We just read the token: 1010 And we read the char:0
+
+ We are now in state 2
+
+We just read the token: 1010 And we read the char:1
+
+ We are now in state 0
+
+We just read the token: 1010 And we read the char:0
+
+ We are now in state 0
+
+
+The string we just passed for parsing is: 1011
+We just read the token: 1011 And we read the char:1
+
+ We are now in state 1
+
+We just read the token: 1011 And we read the char:0
+
+ We are now in state 2
+
+We just read the token: 1011 And we read the char:1
+
+ We are now in state 0
+
+We just read the token: 1011 And we read the char:1
+
+ We are now in state 1
+
+
+The string we just passed for parsing is: 1100
+We just read the token: 1100 And we read the char:1
+
+ We are now in state 1
+
+We just read the token: 1100 And we read the char:1
+
+ We are now in state 3
+
+We just read the token: 1100 And we read the char:0
+
+ We are now in state 1
+
+We just read the token: 1100 And we read the char:0
+
+ We are now in state 2
+
+
+The string we just passed for parsing is: 1101
+We just read the token: 1101 And we read the char:1
+
+ We are now in state 1
+
+We just read the token: 1101 And we read the char:1
+
+ We are now in state 3
+
+We just read the token: 1101 And we read the char:0
+
+ We are now in state 1
+
+We just read the token: 1101 And we read the char:1
+
+ We are now in state 3
+
+
+The string we just passed for parsing is: 1111
+We just read the token: 1111 And we read the char:1
+
+ We are now in state 1
+
+We just read the token: 1111 And we read the char:1
+
+ We are now in state 3
+
+We just read the token: 1111 And we read the char:1
+
+ We are now in state 2
+
+We just read the token: 1111 And we read the char:1
+
+ We are now in state 0
+
+
+The string we just passed for parsing is: 
+
+The string we just passed for parsing is: 
+
+The string we just passed for parsing is: 
+
+The string we just passed for parsing is: 
+
+The string we just passed for parsing is: 
+
+The string we just passed for parsing is: 
+
+The string we just passed for parsing is: 
+
+The string we just passed for parsing is: 
+
+The string we just passed for parsing is: 

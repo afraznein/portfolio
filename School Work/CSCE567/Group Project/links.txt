@@ -1,0 +1,3 @@
+Links to the dataset and resources
+https://www.lendingclub.com/info/download-data.action
+https://www.federalreserve.gov/bankinforeg/ccar.htm

@@ -1,0 +1,31 @@
+<ion-view cache-view="false" view-title="Volunteer List">
+  
+    <ion-content class="padding">
+      
+        <ion-item class="item-remove-animate item-avatar item-icon-right">
+            <h2>Name: {{name}}</h2>
+            <p>
+                id: {{id}}
+            </p>
+            <p>
+                Address: {{address}}
+            </p>
+            <p>
+                City: {{city}}
+            </p>
+            <p>
+                Zipcode: {{zipcode}}
+            </p>
+            <p>State: {{state}}
+            </p>
+            <p>Email: {{email}}</p>
+
+        </ion-item>
+        <br>
+        <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="item in itens" type="item-text-wrap">
+        <p>
+            Shift: {{item.qty}}
+        </p>                            
+        </ion-item>
+    </ion-content>
+</ion-view>
