@@ -1,0 +1,21 @@
+Math Grades:
+
+Exams (10% each): 75/100, 42/100, 77/100
+Quizzes(25% drop 2 lowest): 9.5/10, 10/10, 8/10, 2/10, 8/10, 5/10
+Participation(10%): ?
+Final(35%):
+
+(194/300) * 0.3 = 0.194
+(35.5/40) * 0.25 = 0.221875
+() * 0.1 = ?
+
+Worst Case: 0.415875 // Need 81 on Final to get C
+Best Case: 0.515875 / Need 51 on Final to get C / 81 to get B
+() * 0.35 = ?
+
+152/200 * .2 = 0.152
+35.5/40 * 0.25 = 0.221875
+
+To get a C, 0.70 - 0.373875 = 0.326125 ; 0.326125/0.45 = 
+72 on the final to replace test 2 and get a C with a 0 class participation
+50 on the final to replace test 2 and get a C with 100% class participation
